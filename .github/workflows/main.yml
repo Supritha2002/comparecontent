@@ -26,6 +26,7 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=120 --ignore=E111,E121,E126 --statistics
       - name: Run and collect coverage
         run: |
+          cd .
           coverage run comparefilecontent.py
           coverage html
           coverage report
