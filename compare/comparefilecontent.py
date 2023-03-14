@@ -17,5 +17,5 @@ def comparefilecontent(filepath, standardfile):
 
 
 if __name__ == "__main__":
-    missing_keys=comparefilecontent(".env","standard.env")]
+    missing_keys=comparefilecontent(".env","standard.env")
     print(missing_keys)
