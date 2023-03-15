@@ -28,7 +28,7 @@ jobs:
       - name: Run and collect coverage
         run: | 
           cd compare
-          coverage run testfilecontent.py
+          coverage run comparefilecontent.py
           coverage html
           coverage report
     
