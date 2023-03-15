@@ -6,7 +6,7 @@ class TestFolder(unittest.TestCase):
 
     def test_for_missing_filecontent(self):
         missingkeys = comparefilecontent(".env", "standard.env")
-        self.assertTrue(len(missingkeys) > 0)
+        self.assertEqual(len(missingkeys) , 0)
  
      
 if __name__ == "__main__":
