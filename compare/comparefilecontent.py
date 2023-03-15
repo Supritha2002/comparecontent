@@ -17,4 +17,4 @@ def comparefilecontent(filepath, standardfile):
 
 
 if __name__ == "__main__":
-    comparefilecontent(".env","standard.env"
+    comparefilecontent(".env","standard.env")
