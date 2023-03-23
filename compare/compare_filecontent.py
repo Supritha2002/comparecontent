@@ -14,7 +14,3 @@ def comparefilecontent(filepath, standardfile):
         if keys not in filecontent:
             missing_keys.append(keys)
     return missing_keys
-
-
-if __name__ == "__main__":
-    comparefilecontent(".env","standard.env")
