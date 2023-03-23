@@ -1,4 +1,4 @@
-from comparefilecontent import comparefilecontent
+from compare_filecontent import comparefilecontent
 import unittest
 
 
@@ -9,10 +9,10 @@ class TestFolder(unittest.TestCase):
         self.assertEqual(len(missingkeys) , 0)
     
     def test_invalid_folder_path(self):
-        compare_folder_contents("env", "standard.env")
+        comparefilecontent("env", "standard.env")
 
     def test_invalid_standard_path(self):
-        compare_folder_contents(".env", "standard.env")
+        comparefilecontent(".env", "standard.env")
         
  
      
