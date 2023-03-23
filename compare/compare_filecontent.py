@@ -1,7 +1,11 @@
 from dotenv import dotenv_values
+import os,sys
 
 
 def readcontents(filename):
+    isExisting=os.path.isfile(filename)
+    if isExisting is False:
+        return sys.exit("Invalid file")
     contents = dotenv_values(filename)
     return contents
 
