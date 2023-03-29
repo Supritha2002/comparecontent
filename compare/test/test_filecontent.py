@@ -13,8 +13,3 @@ class TestFolder(unittest.TestCase):
 
     def test_invalid_standard_path(self):
         self.assertRaises(SystemExit,comparefilecontent,".env", "standards.env")
-        
- 
-     
-if __name__ == "__main__":
-    unittest.main()
