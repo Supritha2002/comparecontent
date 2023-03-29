@@ -4,7 +4,7 @@ import unittest
 
 class TestFolder(unittest.TestCase):
 
-   def test_for_no_missing_filecontent(self):
+    def test_for_no_missing_filecontent(self):
         missingkeys = comparefilecontent(".env", "standard.env")
         self.assertEqual(len(missingkeys), 0)
  
